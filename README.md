@@ -1,16 +1,104 @@
-# React + Vite
+# 🌿 KeenKeeper
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+### Build Stronger Friendships Through Meaningful Connections
 
-Currently, two official plugins are available:
+KeenKeeper is a modern relationship management web application that helps users maintain and nurture friendships by tracking interactions such as 📞 Calls, 💬 Texts, and 🎥 Video Chats.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
 
-## React Compiler
+### 🚀 Live Features
+📌 Interaction Tracking • 📊 Analytics Dashboard • 🕒 Dynamic Timeline • 🎯 Smart Filtering
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
 
-## Expanding the ESLint configuration
+# 📖 Project Overview
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+KeenKeeper allows users to manage their social connections in a more intentional way. Users can interact with friends through different communication methods and monitor their relationship activities visually through timelines and analytics.
+
+The project focuses on:
+- Relationship awareness
+- Communication consistency
+- Data visualization
+- Clean and responsive UI/UX
+
+
+# ⚙️ Technologies Used
+
+
+| Frontend | Styling | State Management | Visualization |
+|----------|----------|------------------|----------------|
+| React.js | Tailwind CSS | Context API | Recharts |
+| React Router | DaisyUI | useContext Hook | Pie Charts |
+| React Icons | Responsive Design | Global State | Analytics UI |
+
+
+# ✨ Core Features
+
+## 📞 1. Multi-Type Interaction Tracking
+
+Users can log different communication activities directly from the Friend Details page:
+
+- Call Interaction
+- Text Interaction
+- Video Interaction
+
+Each activity is dynamically stored with its own interaction type.
+
+## 🕒 2. Dynamic Timeline System
+
+The Timeline page displays all user interactions in real time using Context API.
+
+### Features Included:
+- Real-time updates
+- Dynamic icons by interaction type
+- Activity filtering system
+- Organized interaction history
+
+### Available Filters:
+- All
+- Calls
+- Texts
+- Videos
+
+## 📊 3. Analytics Dashboard
+
+KeenKeeper includes a professional analytics section powered by **Recharts**.
+
+### Analytics Features:
+- Donut Pie Chart Visualization
+- Call/Text/Video distribution tracking
+- Responsive chart rendering
+- Modern dashboard card design
+
+# 🧠 React Concepts Implemented
+
+This project demonstrates practical implementation of:
+
+- React Functional Components
+- React Router
+- Context API
+- Shared Global State
+- Dynamic Rendering
+- Conditional Rendering
+- Event Handling
+- Array Mapping & Filtering
+- Recharts Integration
+- Responsive UI Design
+
+---
+
+# 📂 Project Structure
+
+```bash
+src/
+│
+├── Components/
+├── Pages/
+│   ├── FriendDetails/
+│   ├── Timeline/
+│   └── Analytics/
+│
+├── Context/
+│   ├── TimeLineContext.jsx
+│   └── TimeLineProvider.jsx
+│
+├── Routes/
+└── App.jsx
