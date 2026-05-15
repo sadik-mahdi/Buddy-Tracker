@@ -8,7 +8,7 @@ const Navbar = () => {
   return (
     <div className="navbar bg-base-100 shadow-sm border-b-gray-600" >
       <div className="navbar-start">
-        <a className="btn btn-ghost text-xl"><span className='font-bold'>Keen</span>Keeper</a>
+        <a className="btn btn-ghost text-xl"><span className='font-bold'>Buddy</span>Tracker</a>
       </div> 
       <div className="navbar-end gap-2">
         <NavLink 
@@ -21,7 +21,7 @@ const Navbar = () => {
         </NavLink>
 
         <NavLink
-          to="/friends"
+          to="/timeline"
           className={({isActive}) =>
           isActive ? "flex items-center border rounded-md p-2 bg-green-800 text-white gap-1" : "flex items-center bg-white text-gray-600 gap-1"
           }
@@ -30,12 +30,12 @@ const Navbar = () => {
         </NavLink>
 
         <NavLink
-          to="/stats"
+          to="/analytics"
           className={({isActive}) =>
           isActive ? "flex items-center border rounded-md p-2 bg-green-800 text-white gap-1" : "flex items-center bg-white text-gray-600 gap-1"
           }
         >
-          <ImStatsDots />Stats
+          <ImStatsDots />Analytics
         </NavLink>
       </div>
     </div>

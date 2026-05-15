@@ -2,12 +2,14 @@ import React from 'react';
 import { Link } from 'react-router';
 
 const BookCard = ({ friend }) => {
-  // 1. Define your custom hex code mapping
+  
   const statusBg = {
     "almost due": "bg-[#efad44]",
     "overdue": "bg-[#ef4444]",
     "on-track": "bg-[#244d3f]"
   };
+
+  
 
   return (
     <Link to={`/friendDetails/${friend.id}`} className="card bg-base-100 shadow-xl hover:scale-105 transition-transform">
@@ -31,8 +33,8 @@ const BookCard = ({ friend }) => {
         </div>
 
         <div className="card-actions mt-4">
-          {/* 2. Apply the dynamic background using template literals */}
-          <button className={`text-white px-4 py-1 rounded-full text-sm capitalize ${statusBg[friend.status]}`}>
+          
+          <button className={`text-white px-4 py-1 rounded-full text-sm capitalize ${statusBg[friend.status] || 'bg-gray-500'}`}>
             {friend.status}
           </button>
         </div>
